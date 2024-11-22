@@ -1,0 +1,144 @@
+{
+  "Electronics": [
+    "Mobile Phones & Accessories",
+    "Computers & Tablets",
+    "Cameras & Photography",
+    "TVs & Home Entertainment",
+    "Audio & Headphones",
+    "Wearable Technology",
+    "Smart Home Devices"
+  ],
+  "Home & Kitchen": [
+    "Furniture",
+    "Home Decor",
+    "Kitchen & Dining",
+    "Bedding & Bath",
+    "Appliances",
+    "Tools & Home Improvement"
+  ],
+  "Fashion": [
+    "Men's Clothing",
+    "Women's Clothing",
+    "Kids' Clothing",
+    "Shoes & Accessories",
+    "Watches",
+    "Jewelry",
+    "Bags & Luggage"
+  ],
+  "Beauty & Personal Care": [
+    "Skincare",
+    "Haircare",
+    "Makeup",
+    "Fragrances",
+    "Men's Grooming",
+    "Oral Care"
+  ],
+  "Books & Audible": [
+    "Fiction & Literature",
+    "Non-Fiction",
+    "Children's Books",
+    "Textbooks",
+    "Audiobooks",
+    "eBooks"
+  ],
+  "Toys & Games": [
+    "Action Figures & Dolls",
+    "Puzzles",
+    "Board Games",
+    "Outdoor Play",
+    "Educational Toys"
+  ],
+  "Sports & Outdoors": [
+    "Exercise & Fitness",
+    "Outdoor Recreation",
+    "Team Sports",
+    "Camping & Hiking",
+    "Cycling",
+    "Fan Shop"
+  ],
+  "Health & Wellness": [
+    "Vitamins & Supplements",
+    "Medical Supplies & Equipment",
+    "Health Care",
+    "Personal Care Appliances",
+    "Wellness & Relaxation"
+  ],
+  "Grocery & Gourmet Food": [
+    "Snacks",
+    "Beverages",
+    "Pantry Staples",
+    "Fresh Produce",
+    "Specialty Diets",
+    "Meal Kits"
+  ],
+  "Baby & Childcare": [
+    "Baby Gear",
+    "Diapers & Wipes",
+    "Baby Food",
+    "Nursing & Feeding",
+    "Nursery Furniture",
+    "Baby Toys"
+  ],
+  "Pet Supplies": [
+    "Dog & Cat Supplies",
+    "Fish & Aquatic Pets",
+    "Birds",
+    "Small Animals",
+    "Pet Food",
+    "Pet Grooming"
+  ],
+  "Automotive": [
+    "Car Accessories",
+    "Car Electronics",
+    "Car Parts & Tools",
+    "Motorcycle & ATV",
+    "Oils & Fluids"
+  ],
+  "Office Products": [
+    "Office Supplies",
+    "Furniture",
+    "Printers & Ink",
+    "Office Electronics",
+    "School Supplies"
+  ],
+  "Industrial & Scientific": [
+    "Lab & Scientific Products",
+    "Professional Medical Supplies",
+    "Industrial Tools & Equipment",
+    "Janitorial & Sanitation Supplies"
+  ],
+  "Handmade": [
+    "Home Decor",
+    "Jewelry",
+    "Clothing",
+    "Handcrafted Gifts",
+    "Art & Collectibles"
+  ],
+  "Garden & Outdoor": [
+    "Outdoor Furniture",
+    "Grills & Outdoor Cooking",
+    "Garden Tools & Equipment",
+    "Plants, Seeds & Bulbs"
+  ],
+  "Musical Instruments": [
+    "Guitars & Accessories",
+    "Keyboards & Pianos",
+    "Drums & Percussion",
+    "DJ & Karaoke Equipment",
+    "Studio Recording Equipment"
+  ],
+  "Movies, Music & Games": [
+    "Movies & TV Shows",
+    "Music CDs & Vinyl",
+    "Video Games & Consoles",
+    "Musical Instruments",
+    "Board Games & Puzzles"
+  ],
+  "Software": [
+    "Business & Office",
+    "Operating Systems",
+    "Antivirus & Security",
+    "Education & Reference",
+    "Graphic Design & Photo Editing"
+  ]
+}
