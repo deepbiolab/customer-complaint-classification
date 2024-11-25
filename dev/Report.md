@@ -1,4 +1,4 @@
-# Technical Documentation: Customer Complaint Classification System
+# Technical Documentation
 
 ## 1. System Architecture
 
