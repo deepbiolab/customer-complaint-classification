@@ -1,0 +1,175 @@
+2024-11-25 21:57:59,301 - INFO - Starting complaint processing workflow
+2024-11-25 21:57:59,303 - INFO - Processing: sample1.mp3
+2024-11-25 21:58:03,709 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 21:58:03,717 - INFO - Transcription completed
+2024-11-25 21:58:03,717 - INFO - Prompt created
+2024-11-25 21:58:17,196 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 21:58:23,013 - INFO - Image generated successfully on attempt 1
+2024-11-25 21:58:40,789 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 21:58:41,164 - INFO - Image described and annotated
+2024-11-25 21:58:46,050 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 21:58:46,056 - INFO - Complaint classified
+2024-11-25 21:58:46,056 - INFO - 
+Results Summary:
+2024-11-25 21:58:46,057 - INFO - Transcription (excerpt): I purchased a smartwatch from your store, but it's not syncing properly with my phone. The app keeps...
+2024-11-25 21:58:46,057 - INFO - Generated Image: output/sample1/generated_image.png
+2024-11-25 21:58:46,057 - INFO - Annotated Image: output/sample1/annotated_image.png
+2024-11-25 21:58:46,057 - INFO - Classification: {'category': 'Electronics', 'subcategory': 'Wearable Technology', 'confidence': 'high', 'reasoning': "The customer's complaint specifically mentions issues with a smartwatch, which falls under the 'Wearable Technology' subcategory within 'Electronics'. The issues described include syncing problems with a phone, app crashes, and inaccurate step tracking, all of which are directly related to the functionality of the smartwatch."}
+2024-11-25 21:58:46,058 - INFO - ==================================================
+2024-11-25 21:58:46,058 - INFO - Processing: sample10.mp3
+2024-11-25 21:58:51,146 - INFO - Retrying request to /audio/transcriptions in 0.396325 seconds
+2024-11-25 21:58:56,545 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 21:58:56,555 - INFO - Transcription completed
+2024-11-25 21:58:56,556 - INFO - Prompt created
+2024-11-25 21:59:08,824 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 21:59:17,361 - INFO - Image generated successfully on attempt 1
+2024-11-25 21:59:34,395 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 21:59:34,874 - INFO - Image described and annotated
+2024-11-25 21:59:39,672 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 21:59:39,678 - INFO - Complaint classified
+2024-11-25 21:59:39,678 - INFO - 
+Results Summary:
+2024-11-25 21:59:39,679 - INFO - Transcription (excerpt): The grill I ordered arrived with several dents and scratches. It looks like it was used or poorly ha...
+2024-11-25 21:59:39,679 - INFO - Generated Image: output/sample10/generated_image.png
+2024-11-25 21:59:39,679 - INFO - Annotated Image: output/sample10/annotated_image.png
+2024-11-25 21:59:39,680 - INFO - Classification: {'category': 'Garden & Outdoor', 'subcategory': 'Grills & Outdoor Cooking', 'confidence': 'high', 'reasoning': "The customer complaint specifically mentions issues with a grill, which directly falls under the 'Grills & Outdoor Cooking' subcategory within the 'Garden & Outdoor' main category. The description of the damage (dents and scratches) and the nature of the complaint (unacceptable condition for a new product) aligns perfectly with this classification."}
+2024-11-25 21:59:39,680 - INFO - ==================================================
+2024-11-25 21:59:39,680 - INFO - Processing: sample2.mp3
+2024-11-25 21:59:43,448 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 21:59:43,454 - INFO - Transcription completed
+2024-11-25 21:59:43,454 - INFO - Prompt created
+2024-11-25 21:59:55,692 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 22:00:16,021 - INFO - Image generated successfully on attempt 1
+2024-11-25 22:00:33,197 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:00:33,701 - INFO - Image described and annotated
+2024-11-25 22:00:40,142 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:00:40,148 - INFO - Complaint classified
+2024-11-25 22:00:40,148 - INFO - 
+Results Summary:
+2024-11-25 22:00:40,148 - INFO - Transcription (excerpt): The dining table I ordered arrived with one of the legs broken. The packaging was intact so it seems...
+2024-11-25 22:00:40,149 - INFO - Generated Image: output/sample2/generated_image.png
+2024-11-25 22:00:40,149 - INFO - Annotated Image: output/sample2/annotated_image.png
+2024-11-25 22:00:40,149 - INFO - Classification: {'category': 'Home & Kitchen', 'subcategory': 'Furniture', 'confidence': 'high', 'reasoning': "The customer's complaint clearly pertains to a damaged dining table, which is a furniture item. The description of the complaint and the image analysis both confirm that the issue is with the furniture itself, specifically a broken leg of the table. This aligns perfectly with the 'Furniture' subcategory under 'Home & Kitchen'."}
+2024-11-25 22:00:40,150 - INFO - ==================================================
+2024-11-25 22:00:40,150 - INFO - Processing: sample3.mp3
+2024-11-25 22:00:44,188 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 22:00:44,203 - INFO - Transcription completed
+2024-11-25 22:00:44,204 - INFO - Prompt created
+2024-11-25 22:00:57,433 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 22:01:04,034 - INFO - Image generated successfully on attempt 1
+2024-11-25 22:01:28,491 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:01:28,853 - INFO - Image described and annotated
+2024-11-25 22:01:34,567 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:01:34,573 - INFO - Complaint classified
+2024-11-25 22:01:34,573 - INFO - 
+Results Summary:
+2024-11-25 22:01:34,574 - INFO - Transcription (excerpt): I ordered a dress in size medium, but the one I received is labelled medium and fits like an extra s...
+2024-11-25 22:01:34,574 - INFO - Generated Image: output/sample3/generated_image.png
+2024-11-25 22:01:34,574 - INFO - Annotated Image: output/sample3/annotated_image.png
+2024-11-25 22:01:34,575 - INFO - Classification: {'category': 'Fashion', 'subcategory': "Women's Clothing", 'confidence': 'high', 'reasoning': "The complaint specifically mentions an issue with the sizing of a dress ordered by the customer, which clearly falls under the 'Women's Clothing' subcategory within the 'Fashion' category. The details provided about the tag and fit issues further confirm the relevance to this subcategory."}
+2024-11-25 22:01:34,575 - INFO - ==================================================
+2024-11-25 22:01:34,575 - INFO - Processing: sample4.mp3
+2024-11-25 22:01:38,045 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 22:01:38,077 - INFO - Transcription completed
+2024-11-25 22:01:38,078 - INFO - Prompt created
+2024-11-25 22:01:52,369 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 22:02:07,354 - INFO - Image generated successfully on attempt 1
+2024-11-25 22:02:45,389 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:02:45,935 - INFO - Image described and annotated
+2024-11-25 22:02:50,277 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:02:50,286 - INFO - Complaint classified
+2024-11-25 22:02:50,287 - INFO - 
+Results Summary:
+2024-11-25 22:02:50,287 - INFO - Transcription (excerpt): The face cream I ordered arrived with its seal broken, and the product looks like it has been used. ...
+2024-11-25 22:02:50,288 - INFO - Generated Image: output/sample4/generated_image.png
+2024-11-25 22:02:50,288 - INFO - Annotated Image: output/sample4/annotated_image.png
+2024-11-25 22:02:50,295 - INFO - Classification: {'category': 'Beauty & Personal Care', 'subcategory': 'Skincare', 'confidence': 'high', 'reasoning': "The complaint specifically mentions issues with a face cream, which directly falls under the 'Skincare' subcategory within 'Beauty & Personal Care'. The details provided about the broken seal and apparent use of the product align with concerns typically associated with skincare products, where hygiene and product integrity are crucial."}
+2024-11-25 22:02:50,295 - INFO - ==================================================
+2024-11-25 22:02:50,296 - INFO - Processing: sample5.mp3
+2024-11-25 22:02:54,429 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 22:02:54,445 - INFO - Transcription completed
+2024-11-25 22:02:54,446 - INFO - Prompt created
+2024-11-25 22:03:08,434 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 22:03:14,998 - INFO - Image generated successfully on attempt 1
+2024-11-25 22:03:30,649 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:03:30,965 - INFO - Image described and annotated
+2024-11-25 22:03:36,239 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:03:36,257 - INFO - Complaint classified
+2024-11-25 22:03:36,259 - INFO - 
+Results Summary:
+2024-11-25 22:03:36,260 - INFO - Transcription (excerpt): I purchased an audiobook from your website, but the file is corrupted and won't play properly. I've ...
+2024-11-25 22:03:36,261 - INFO - Generated Image: output/sample5/generated_image.png
+2024-11-25 22:03:36,262 - INFO - Annotated Image: output/sample5/annotated_image.png
+2024-11-25 22:03:36,263 - INFO - Classification: {'category': 'Books & Audible', 'subcategory': 'Audiobooks', 'confidence': 'high', 'reasoning': "The customer's complaint explicitly mentions issues with an audiobook purchased from the website, which is corrupted and does not play correctly. The image description corroborates the complaint by showing error messages and visual representations of the corrupted audiobook file on a computer screen. This directly aligns with the 'Audiobooks' subcategory under 'Books & Audible'."}
+2024-11-25 22:03:36,264 - INFO - ==================================================
+2024-11-25 22:03:36,272 - INFO - Processing: sample6.mp3
+2024-11-25 22:03:44,165 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 22:03:44,181 - INFO - Transcription completed
+2024-11-25 22:03:44,181 - INFO - Prompt created
+2024-11-25 22:03:57,124 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 22:04:03,792 - INFO - Image generated successfully on attempt 1
+2024-11-25 22:04:30,097 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:04:30,538 - INFO - Image described and annotated
+2024-11-25 22:04:35,920 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:04:35,938 - INFO - Complaint classified
+2024-11-25 22:04:35,939 - INFO - 
+Results Summary:
+2024-11-25 22:04:35,940 - INFO - Transcription (excerpt): The board game I ordered is missing several key pieces, making it impossible to play. This is very d...
+2024-11-25 22:04:35,941 - INFO - Generated Image: output/sample6/generated_image.png
+2024-11-25 22:04:35,941 - INFO - Annotated Image: output/sample6/annotated_image.png
+2024-11-25 22:04:35,942 - INFO - Classification: {'category': 'Toys & Games', 'subcategory': 'Board Games', 'confidence': 'high', 'reasoning': "The customer complaint specifically mentions issues with a board game missing key pieces, which directly aligns with the 'Board Games' subcategory under 'Toys & Games'. The provided image and description further support this classification by detailing the board games involved, despite no visible missing pieces in the image. The complaint's focus on the functionality and completeness of the board game for play strongly suggests this categorization."}
+2024-11-25 22:04:35,943 - INFO - ==================================================
+2024-11-25 22:04:35,945 - INFO - Processing: sample7.mp3
+2024-11-25 22:04:39,387 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 22:04:39,394 - INFO - Transcription completed
+2024-11-25 22:04:39,394 - INFO - Prompt created
+2024-11-25 22:04:53,681 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 22:05:11,433 - INFO - Image generated successfully on attempt 1
+2024-11-25 22:05:27,855 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:05:28,338 - INFO - Image described and annotated
+2024-11-25 22:05:33,787 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:05:33,797 - INFO - Complaint classified
+2024-11-25 22:05:33,797 - INFO - 
+Results Summary:
+2024-11-25 22:05:33,798 - INFO - Transcription (excerpt): The fresh fruits I ordered arrived in terrible condition, most of them were bruised and starting to ...
+2024-11-25 22:05:33,798 - INFO - Generated Image: output/sample7/generated_image.png
+2024-11-25 22:05:33,799 - INFO - Annotated Image: output/sample7/annotated_image.png
+2024-11-25 22:05:33,799 - INFO - Classification: {'category': 'Grocery & Gourmet Food', 'subcategory': 'Fresh Produce', 'confidence': 'high', 'reasoning': "The customer's complaint specifically addresses the poor condition of the fresh fruits received, which are categorized under 'Fresh Produce' in the 'Grocery & Gourmet Food' category. The description of the fruits being bruised and starting to rot aligns directly with issues related to the quality of fresh produce."}
+2024-11-25 22:05:33,799 - INFO - ==================================================
+2024-11-25 22:05:33,810 - INFO - Processing: sample8.mp3
+2024-11-25 22:05:38,190 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 22:05:38,209 - INFO - Transcription completed
+2024-11-25 22:05:38,210 - INFO - Prompt created
+2024-11-25 22:05:51,142 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 22:05:59,363 - INFO - Image generated successfully on attempt 1
+2024-11-25 22:06:21,339 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:06:21,615 - INFO - Image described and annotated
+2024-11-25 22:06:27,422 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:06:27,427 - INFO - Complaint classified
+2024-11-25 22:06:27,427 - INFO - 
+Results Summary:
+2024-11-25 22:06:27,427 - INFO - Transcription (excerpt): I ordered a 10 kilograms bag of dog food, but the package I received was only 5 kilograms. This is n...
+2024-11-25 22:06:27,427 - INFO - Generated Image: output/sample8/generated_image.png
+2024-11-25 22:06:27,428 - INFO - Annotated Image: output/sample8/annotated_image.png
+2024-11-25 22:06:27,428 - INFO - Classification: {'category': 'Pet Supplies', 'subcategory': 'Pet Food', 'confidence': 'high', 'reasoning': "The customer's complaint specifically mentions an issue with the quantity of dog food received, which directly relates to the 'Pet Food' subcategory under 'Pet Supplies'. The image description confirms the discrepancy between the ordered and delivered quantity, supporting the customer's claim and necessitating action in this specific subcategory."}
+2024-11-25 22:06:27,428 - INFO - ==================================================
+2024-11-25 22:06:27,429 - INFO - Processing: sample9.mp3
+2024-11-25 22:06:31,087 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/whisper-for-customer-complaint-classification/audio/transcriptions?api-version=2024-06-01 "HTTP/1.1 200 OK"
+2024-11-25 22:06:31,113 - INFO - Transcription completed
+2024-11-25 22:06:31,113 - INFO - Prompt created
+2024-11-25 22:06:44,047 - INFO - HTTP Request: POST https://stude-m3wyaa6y-eastus.cognitiveservices.azure.com//openai/deployments/dall-e-3-for-customer-complaint-classification/images/generations?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2024-11-25 22:06:51,489 - INFO - Image generated successfully on attempt 1
+2024-11-25 22:07:14,313 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:07:14,770 - INFO - Image described and annotated
+2024-11-25 22:07:20,584 - INFO - HTTP Request: POST https://service-models.openai.azure.com//openai/deployments/gpt-4customer-complaint-classification/chat/completions?api-version=2024-08-01-preview "HTTP/1.1 200 OK"
+2024-11-25 22:07:20,593 - INFO - Complaint classified
+2024-11-25 22:07:20,594 - INFO - 
+Results Summary:
+2024-11-25 22:07:20,594 - INFO - Transcription (excerpt): The car seat cover I purchased does not fit my vehicle, even though your website listed it as compat...
+2024-11-25 22:07:20,595 - INFO - Generated Image: output/sample9/generated_image.png
+2024-11-25 22:07:20,595 - INFO - Annotated Image: output/sample9/annotated_image.png
+2024-11-25 22:07:20,596 - INFO - Classification: {'category': 'Automotive', 'subcategory': 'Car Accessories', 'confidence': 'high', 'reasoning': "The customer complaint revolves around a car seat cover that does not fit the vehicle as advertised. The product in question is a car accessory, specifically designed for use in vehicles. The complaint and image description clearly indicate issues with the compatibility of this automotive product, making 'Car Accessories' the most appropriate subcategory under the 'Automotive' category."}
+2024-11-25 22:07:20,596 - INFO - ==================================================
+2024-11-25 22:07:20,613 - INFO - Predictions saved to prediction.json
+2024-11-25 22:07:20,617 - INFO - Accuracy: 100.00%
+2024-11-25 22:07:20,618 - INFO - Processing completed for all audio files
