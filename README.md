@@ -153,12 +153,11 @@ The project is a sequential execution of below tasks:
 
 
 ## Detailed Report
-[Detailed Report](./dev/Report.md)
+- [Detailed Report](./dev/Report.md)
 
 
 ## How to deploy models on Azure
-
-[Deployment instruction](./dev/Deploy.md)
+- [Deployment instruction](./dev/Deploy.md)
 
 
 
