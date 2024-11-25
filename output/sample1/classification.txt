@@ -1,0 +1,4 @@
+Category: Electronics
+Subcategory: Wearable Technology
+Confidence: high
+Reasoning: The customer's complaint specifically mentions issues with a smartwatch, which falls under the 'Wearable Technology' subcategory within 'Electronics'. The issues described include syncing problems with a phone, app crashes, and inaccurate step tracking, all of which are directly related to the functionality of the smartwatch.

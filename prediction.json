@@ -1,0 +1,54 @@
+{
+  "complaints": [
+    {
+      "id": "sample1",
+      "category": "Electronics",
+      "subcategory": "Wearable Technology"
+    },
+    {
+      "id": "sample10",
+      "category": "Garden & Outdoor",
+      "subcategory": "Grills & Outdoor Cooking"
+    },
+    {
+      "id": "sample2",
+      "category": "Home & Kitchen",
+      "subcategory": "Furniture"
+    },
+    {
+      "id": "sample3",
+      "category": "Fashion",
+      "subcategory": "Women's Clothing"
+    },
+    {
+      "id": "sample4",
+      "category": "Beauty & Personal Care",
+      "subcategory": "Skincare"
+    },
+    {
+      "id": "sample5",
+      "category": "Books & Audible",
+      "subcategory": "Audiobooks"
+    },
+    {
+      "id": "sample6",
+      "category": "Toys & Games",
+      "subcategory": "Board Games"
+    },
+    {
+      "id": "sample7",
+      "category": "Grocery & Gourmet Food",
+      "subcategory": "Fresh Produce"
+    },
+    {
+      "id": "sample8",
+      "category": "Pet Supplies",
+      "subcategory": "Pet Food"
+    },
+    {
+      "id": "sample9",
+      "category": "Automotive",
+      "subcategory": "Car Accessories"
+    }
+  ]
+}

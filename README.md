@@ -1,10 +1,10 @@
-# Customer Complaint Classification Starter Project
+# Customer Complaint Classification
+
+![](imgs/proj.png)
 
 ## Overview
 
-This starter project aims to help you learn and implement a generative AI-based solution for classifying customer complaints. The project involves various steps such as transcribing customer audio complaints, generating images, describing and annotating those images, and finally classifying the complaints into appropriate categories. By working through this project, you will get hands-on experience with multiple AI models and the practical integration of generative AI in a real-world scenario.
-
-In addition to executing each of these steps, it is important to store the intermediate results after each stage. This will help in project evaluation and debugging, as well as allow you to understand how each step contributes to the final outcome.
+This project implement a generative AI-based solution for classifying customer complaints. The project involves various steps such as transcribing customer audio complaints, generating images, describing and annotating those images, and finally classifying the complaints into appropriate categories.
 
 1. **Transcribing Customer Audio Complaint**:
 
@@ -29,51 +29,138 @@ In addition to executing each of these steps, it is important to store the inter
 6. **Classify Complaint into Category/Subcategory Pair**:
    - Use the generated image description and the catalog metadata to classify the complaint into a category and subcategory. This is handled by the `gpt.py` module.
 
-***It is recommended to store the intermediate results after this step as well, to ensure that all stages of the process can be reviewed for evaluation.***
 
 ## File Structure
 
-The project consists of the following files:
+### Overall Structure
+```
+customer-complaint-classification/
+│
+├── main.py              # Main orchestrator for the project workflow
+├── whisper.py           # Module for audio transcription
+├── dalle.py             # Module for image generation
+├── vision.py            # Module for image description and annotation
+├── gpt.py               # Module for complaint classification
+├── categories.json      # File containing category and subcategory metadata
+├── audio/               # Directory for input audio files
+├── dev/                 # demo code for how to interact with different models and how to use azure openai service
+├── imgs/                # Images used in Readme file
+└── output/              # Directory for storing intermediate results and log file.
+```
+
+
+### Detailed explanation for following files:
 
 1. **`whisper.py`**:
 
-   - This file contains a function to transcribe audio complaints into text using the Whisper model. The implementation is left incomplete for you to practice.
+   - This file contains a function to transcribe audio complaints into text using the Whisper model.
 
 2. **`dalle.py`**:
 
-   - Contains the function `generate_image()` to create an image representing the issue. The function is partially complete with guidance comments.
+   - Contains the function `generate_image()` to create an image representing the issue.
 
 3. **`vision.py`**:
 
-   - This file contains a function to describe the generated image and annotate it with the key elements identified. The implementation is incomplete to allow you to practice building it.
+   - This file contains a function to describe the generated image and annotate it with the key elements identified.
 
 4. **`gpt.py`**:
 
-   - Contains a function `classify_with_gpt()` that takes in an image description and classifies the complaint into an appropriate category/subcategory. You are required to complete the logic.
+   - Contains a function `classify_with_gpt()` that takes in an image description and classifies the complaint into an appropriate category/subcategory.
 
 5. **`main.py`**:
 
-   - Orchestrates the entire workflow, calling each of the modules in sequence. The workflow steps are described in comments, and you are required to implement the logic to connect each module.
+   - Orchestrates the entire workflow, calling each of the modules in sequence.
 
-## Learning Objectives
-
-- **Hands-on with Generative AI**: You will learn to implement generative AI models for real-world tasks such as image generation and language modeling.
-- **Practical Application of AI APIs**: Understand how to interact with various OpenAI APIs and apply them in a sequence to create an end-to-end solution.
-- **Image Annotation and Description**: Gain experience with describing and annotating images using AI, which is useful in many computer vision applications.
 
 ## Prerequisites
 
-- Basic understanding of Python programming.
-- Familiarity with machine learning concepts and generative AI.
-- Recent reading or coursework on generative AI models
+- Azure OpenAI Service:
+   - Deployments for `Whisper`, `DALL-E`, and `GPT` models are necessary.
+   - Obtain API keys and set up the endpoint URL in the Azure portal.
+- Azure Resource Group: 
+   - Create a resource group in your Azure account for managing related resources (e.g., `OpenAI services`).
 
-## Helpful Tips
+- Set up environment variables for secure access to Azure services:
+   1. Create a `.env` file in the root directory of the project.
+   2. Add the following environment variables to the `.env` file (for method how to get below information, see [How to deploy models on azure](#how-to-deploy-models-on-azure):
+      ```txt
+      AZURE_OPENAI_API_KEY=your_api_key_here 
+      AZURE_OPENAI_ENDPOINT=your_endpoint_url_here 
+      WHISPER_DEPLOYMENT=your_whisper_deployment_name 
+      WHISPER_VERSION=your_whisper_api_version 
+      GPT_DEPLOYMENT=your_gpt_deployment_name 
+      GPT_VERSION=your_gpt_api_version
+      DALLE_DEPLOYMENT=your_dalle_deployment_name 
+      DALLE_VERSION=your_dalle_api_version
+      ```
+      > Replace the placeholders with your actual values from the Azure portal. 
+      > If you use different regions in your models, make sure differentiate the version of the API for each model by name.
+   3. Ensure that the `.env` file is added to your `.gitignore` to prevent sensitive information from being committed to version control.
 
-- **Start Small**: Focus on completing one function at a time. Test each module individually before integrating it into the full workflow.
-- **Experiment with Prompts**: The quality of the generated image or classification can depend heavily on how the prompt is formulated. Experiment with different phrasing.
-- **API Documentation**: Refer to the OpenAI API documentation as you work through the project to understand what parameters are needed for each API call.
+## Data Formats
+
+- Input:
+   - Audio files: Supported formats include `MP3` and `WAV` for transcription.
+- Output (see details for each sample in `output` folder):
+   - Text files for transcription (`transcription.txt`).
+   - PNG images for visual representations (`generated_image.png`, `annotated_image.png`).
+   - Text files for image descriptions and classifications (`image_description.txt`, `classification.txt`).
+   - `output.log`: Log file for tracking the execution of the project.
+- Other files:
+   - `categories.json`: Contains the category and subcategory metadata for classification.
+   - `prediction.json`: Contains the final classification results in JSON format.
+   - `labels.json`: Contains the labels used for classification, corresponding with `audio` folder.
+
+## Usage
+
+### Environment Setup
+- Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/deepbiolab/customer-complaint-classification.git
+   ```
+- Navigate into the project folder:
+   ```bash
+   cd customer-complaint-classification
+   ```
+
+- Ensure `Python 3.12` is installed on your system
+   - If not, using `conda` create a virtual environment(recommend)
+      ```bash
+      conda create -n complaint_clf python=3.12
+      conda activate complaint_clf
+      ```
+- Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Quickstart
+```bash
+python main.py
+```
+
+The project is a sequential execution of below tasks:
+   1. Run `main.py` to initiate the process.
+   2. Transcription via `whisper.py` processes audio file in `audio` folder and returns text.
+   3. Prompt generation in `main.py` feeds into `dalle.py` for image creation.
+   4. Image analysis and annotation are performed in `vision.py`.
+   5. Classification is finalized in `gpt.py` based on text and image outputs.
 
 ## Resources
 
 - [OpenAI API Documentation](https://beta.openai.com/docs/)
-- [Python Documentation](https://docs.python.org/3/)
+
+
+## Detailed Report
+[Detailed Report](./dev/Report.md)
+
+
+## How to deploy models on Azure
+
+[Deployment instruction](./dev/Deploy.md)
+
+
+
+
+

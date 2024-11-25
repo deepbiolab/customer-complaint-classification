@@ -1,0 +1,9 @@
+The image clearly illustrates the customer complaint regarding the condition of the fruits. Let's analyze the specific issues visible:
+
+1. **Bruised Bananas**: The bananas show significant bruising and discoloration, indicating they are well past their optimal fresh state. This is particularly evident with the bananas at the top center of the image, approximately at [0.7, 0.3].
+
+2. **Discolored and Rotted Apples**: Several apples in the image exhibit brown spots and a wrinkled texture that suggests decomposition. These issues are specially notable in the apples positioned in the center to the lower left area of the pile [0.4, 0.45].
+
+3. **Wrinkled and Shriveled Citrus Fruit**: There are a number of citrus fruits (oranges and smaller varieties) looking deeply wrinkled and puckered. This is typically a sign that the fruits have lost moisture and are not fresh, located around [0.4, 0.6] and [0.35, 0.5].
+
+These specific areas indicate key issues with the freshness and quality of the fruits, perfectly aligning with the customer's complaint about the products being bruised and starting to rot upon arrival.

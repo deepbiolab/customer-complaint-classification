@@ -1,0 +1,4 @@
+Category: Books & Audible
+Subcategory: Audiobooks
+Confidence: high
+Reasoning: The customer's complaint explicitly mentions issues with an audiobook purchased from the website, which is corrupted and does not play correctly. The image description corroborates the complaint by showing error messages and visual representations of the corrupted audiobook file on a computer screen. This directly aligns with the 'Audiobooks' subcategory under 'Books & Audible'.

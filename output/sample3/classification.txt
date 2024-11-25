@@ -1,0 +1,4 @@
+Category: Fashion
+Subcategory: Women's Clothing
+Confidence: high
+Reasoning: The complaint specifically mentions an issue with the sizing of a dress ordered by the customer, which clearly falls under the 'Women's Clothing' subcategory within the 'Fashion' category. The details provided about the tag and fit issues further confirm the relevance to this subcategory.

@@ -1,0 +1,4 @@
+Category: Grocery & Gourmet Food
+Subcategory: Fresh Produce
+Confidence: high
+Reasoning: The customer's complaint specifically addresses the poor condition of the fresh fruits received, which are categorized under 'Fresh Produce' in the 'Grocery & Gourmet Food' category. The description of the fruits being bruised and starting to rot aligns directly with issues related to the quality of fresh produce.

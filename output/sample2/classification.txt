@@ -1,0 +1,4 @@
+Category: Home & Kitchen
+Subcategory: Furniture
+Confidence: high
+Reasoning: The customer's complaint clearly pertains to a damaged dining table, which is a furniture item. The description of the complaint and the image analysis both confirm that the issue is with the furniture itself, specifically a broken leg of the table. This aligns perfectly with the 'Furniture' subcategory under 'Home & Kitchen'.
